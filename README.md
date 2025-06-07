@@ -38,7 +38,7 @@ After getting the data and labels saved, we loaded the data and then split it in
 
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/2c2fc7b0-3f91-4b41-b091-8c9d609901fc" />
 
-         Figure 2 Model Code
+Figure 2 Model Code
 
 Main functionality and Interfaces:
 Instead of showing codes, and there are a lot of them for the main, we will show the interface and explain each part of it fully as it’s the important part of the implementation here and the code would just fill the pages uselessly.
@@ -50,7 +50,29 @@ A simple main menu that includes a synopsis of the team and project. There are t
 
 ![image](https://github.com/user-attachments/assets/aae8f5a6-0457-49b1-8ccf-dd4d1b28b0e9)
 
-         Figure 3 Esharat Main Menu
+Figure 3 Esharat Main Menu
+
+
+ Translation Page:
+This page contains the bulk of our program, almost every functionality is accessed and done through here. First there’s a camera window, through here the program will track hand movement for translation purposes, after the program predicts the hand gesture, it will be written below the camera window. If the hand isn’t shown to the camera the program will print out a space character.
+Below that we have four buttons, from left to right:
+-	Delete Translation: Deletes the written translation and begins a new one.
+-	Save Translation: Saves the current translation into a file that can be viewed in the saved translation page.
+-	Stop Translation: Stops the app.
+-	Delete: Deletes the last written letter.
+
+
+  ![image](https://github.com/user-attachments/assets/0eeb183b-9a3e-4ef9-b92b-b0ba00394292)
+
+  Figure 4 Translation Page
+
+ Saved Translation Text Page:
+Here you can read the translation you saved previously, saving a new translation will wipe the currently saved one.
+
+
+![image](https://github.com/user-attachments/assets/64b493ae-91d3-4ae1-a247-d769ae88f968)
+
+Figure 5 Saved Translation Text Page
 
 
 
