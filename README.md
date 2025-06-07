@@ -19,3 +19,7 @@ This project consists of three main parts:
 3-Interfaces: Creating interfaces for both desktop and mobile
 
 A last part is porting it to Android but it probably won't be a big deal or time consuming.
+
+
+
+<img width="440" alt="Screenshot 2025-06-07 at 6 48 50 PM" src="https://github.com/user-attachments/assets/9e9a2fd0-8a04-4b17-817a-35218b5372d3" />
