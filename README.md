@@ -28,8 +28,6 @@ Before going into the main implementation codes, this is the code used for data 
 -
 
 <img width="351" alt="image" src="https://github.com/user-attachments/assets/476ca65c-98cb-4d35-bc58-42e9a6c28329" />
-
-
 Figure 1 Data Extraction code
 
 
@@ -37,7 +35,6 @@ Model Training:
 After getting the data and labels saved, we loaded the data and then split it into training and testing sets with a normal shuffle and then fit it to the model with a randomforestclassifier algorithm to train on. Afterwards we did a simple prediction test for accuracy and saved the model to a pickle file as it’s the easiest to use format for saving models.
 
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/2c2fc7b0-3f91-4b41-b091-8c9d609901fc" />
-
 Figure 2 Model Code
 
 Main functionality and Interfaces:
@@ -49,7 +46,6 @@ A simple main menu that includes a synopsis of the team and project. There are t
 
 
 ![image](https://github.com/user-attachments/assets/aae8f5a6-0457-49b1-8ccf-dd4d1b28b0e9)
-
 Figure 3 Esharat Main Menu
 
 
@@ -63,7 +59,6 @@ Below that we have four buttons, from left to right:
 
 
   ![image](https://github.com/user-attachments/assets/0eeb183b-9a3e-4ef9-b92b-b0ba00394292)
-
   Figure 4 Translation Page
 
  Saved Translation Text Page:
@@ -71,8 +66,32 @@ Here you can read the translation you saved previously, saving a new translation
 
 
 ![image](https://github.com/user-attachments/assets/64b493ae-91d3-4ae1-a247-d769ae88f968)
-
 Figure 5 Saved Translation Text Page
+
+Testing
+ 7.1 Introduction:
+A testing phase is an important phase in a software’s development cycle, here we can verify that everything works as intended without major issues. During this phase we will make tests that guarantee that the implementation of each functionality meets our project requirements and works as flawlessly as possible and works under most needed circumstances.
+First, we will write test descriptions with tasks that have certain paths that lead to certain expected results, if these results are reached by completing the paths, then the program passed the tests.
+ 7.2 Tasks and Paths:
+There are 5 main tasks in our program, these tasks are essential for our project and have an important requirement which is efficiency and ease of use, and so, our tests are written with those in mind:
+•	Task 1: Start Translation
+•	Task 2: Translate a hand gesture
+•	Task 3: Delete a translated letter
+•	Task 4: Delete all of the translated text
+•	Task 5: Save the translated text and view it
+•	Task 6: Stop the translation
+
+ 
+Below is a table with the correct path for each task, these will be used in testing:
+8 Table 7.1 Task Navigation Paths
+Task No.	Task Name	Correct Path
+1	Start Translation	Main Menu > Start Translation
+2	Translate a hand gesture	Start Translation > Hand gesture to the camera
+3	Delete a translated letter	Start Translation > Hand gesture > Delete
+4	Delete all of the translated text	Start Translation > Hand gesture > Delete Translation
+5	Save the translated text and view it	Start Translation > Hand gesture > Save Translation > Back arrow to Main Menu > Translated Text
+6	Stop the translation	Start Translation > Stop Translation
+
 
 
 
