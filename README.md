@@ -109,7 +109,7 @@ System Testing tests the program fully and is required to be done manually with 
 -
 
 
-Test Results:
+                                                   Test Results:
 
 Unit Testing:
 
