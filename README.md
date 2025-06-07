@@ -1,25 +1,18 @@
-Temp readme, will be fully rewritten later on but for now it's more of a check list and reminders.
+There are over 500,000 hearing-impaired people in Saudi Arabia, and a lot of them face daily hardships when trying to communicate with other people, and the same thing happens when other people try and communicate with them, as most people don’t know sign language. Translators have helped in bringing people with different backgrounds and cultures together, so what if we did the same thing, but with Saudi Sign Language?
 
-Main Funtionality Code Status:
+In Our Project, we aim to create an easy-to-use, fast, and efficient Saudi Sign Language translator. This will be done by creating a machine learning model trained on datasets of Arabic/Saudi Sign Language and then using it in an application we will develop that takes a live camera feed and tracks hand movement and recognizes hand gestures efficiently.
 
--Main: full translation implemented
+Implementation
 
--Data Collection: Fully implemented v2
+Our project is implemented entirely in the program code, there is no database and no physical tools or hardware that is used aside from a webcam. The implementation is split into three core parts. First, hand detection and tracking and data extraction which is done in multiple parts of the code, but we’ll show one of them only as it’s the same method. Second, model training on the data extracted from the dataset, we created our own dataset. Lastly, the translation and text saving which is the part that will be used by the users in the program.
+Here we will introduce each major library and explain what it was used for. Afterwards we will show the program and how each part functions.
 
--Model SR1: fully done with sklearn's RandomForestClassifier
+Mediapipe:
+One of the core parts of the project is hand detection and tracking and we did that entirely through the Mediapipe HANDS model which tracks the user’s hand movement by detecting specific landmarks on each finger, these landmarks are XYZ coordinates. We use the X and Y coordinates to detect hand gestures, and this detection is used in two ways, extracting data from the dataset pictures so we can train the model, and translating sign language with the trained model.
 
+SKLearn:
+SKLearn provides a wide range of machine learning algorithms that can be used to process data and train a model efficiently. We decided to go with SKLearn instead of Keras because of its simplicity and having some algorithms that are useful to our project, here we used the randomforestclassifier algorithm which goes through a voting system between trees to decide the outcome of the prediction. This algorithm is good for a project of this scale but might cause problems in accuracy with much larger projects. 
 
+Kivy:
+A core focus of our project is creating an efficient to use program that anyone can use intuitively without even needing a guide. We decided to go with the Kivy library for our interface, it’s simple to use and extremely flexible to out needs and requirements for the program.
 
-This project consists of three main parts:
-
-1-Main Functionality: Tracking hands and translating sign language
-
-2-Text: Formatting the tranlated text and saving it
-
-3-Interfaces: Creating interfaces for both desktop and mobile
-
-A last part is porting it to Android but it probably won't be a big deal or time consuming.
-
-
-
-<img width="440" alt="Screenshot 2025-06-07 at 6 48 50 PM" src="https://github.com/user-attachments/assets/9e9a2fd0-8a04-4b17-817a-35218b5372d3" />
