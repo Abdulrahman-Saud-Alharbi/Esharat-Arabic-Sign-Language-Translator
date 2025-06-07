@@ -68,11 +68,15 @@ Here you can read the translation you saved previously, saving a new translation
 ![image](https://github.com/user-attachments/assets/64b493ae-91d3-4ae1-a247-d769ae88f968)
 Figure 5 Saved Translation Text Page
 
+
 Testing
- 7.1 Introduction:
+
 A testing phase is an important phase in a software’s development cycle, here we can verify that everything works as intended without major issues. During this phase we will make tests that guarantee that the implementation of each functionality meets our project requirements and works as flawlessly as possible and works under most needed circumstances.
-First, we will write test descriptions with tasks that have certain paths that lead to certain expected results, if these results are reached by completing the paths, then the program passed the tests.
- 7.2 Tasks and Paths:
+First, we will write test descriptions with tasks that have certain paths that lead to certain expected results, if these results are reached by completing the paths, then the 
+program passed the tests.
+
+ 
+Tasks and Paths:
 There are 5 main tasks in our program, these tasks are essential for our project and have an important requirement which is efficiency and ease of use, and so, our tests are written with those in mind:
 •	Task 1: Start Translation
 •	Task 2: Translate a hand gesture
@@ -81,16 +85,30 @@ There are 5 main tasks in our program, these tasks are essential for our project
 •	Task 5: Save the translated text and view it
 •	Task 6: Stop the translation
 
- 
+
 Below is a table with the correct path for each task, these will be used in testing:
-8 Table 7.1 Task Navigation Paths
-Task No.	Task Name	Correct Path
-1	Start Translation	Main Menu > Start Translation
-2	Translate a hand gesture	Start Translation > Hand gesture to the camera
-3	Delete a translated letter	Start Translation > Hand gesture > Delete
-4	Delete all of the translated text	Start Translation > Hand gesture > Delete Translation
-5	Save the translated text and view it	Start Translation > Hand gesture > Save Translation > Back arrow to Main Menu > Translated Text
-6	Stop the translation	Start Translation > Stop Translation
+
+<img width="662" alt="Screenshot 2025-06-07 at 7 09 07 PM" src="https://github.com/user-attachments/assets/98e8465f-1963-4b23-b2c2-b1df2c610b38" />
+
+
+Separate Functionality Testing:
+In this method we will try some functionalities that have multiple results based on some factors or have set results. This gives us a way to check if there are bugs of underlying problems that were not noticed during development. These serve as the unit tests.
+
+<img width="660" alt="Screenshot 2025-06-07 at 7 09 46 PM" src="https://github.com/user-attachments/assets/9477cd33-3083-4d91-9c5b-da3e7ee952af" />
+
+Full System Testing:
+System Testing tests the program fully and is required to be done manually with different routes or scenarios and checking if the results are expected or not. The table below provides some testing scenarios that are probable to happen to normal users and are expected to work flawlessly:
+
+<img width="659" alt="Screenshot 2025-06-07 at 7 10 17 PM" src="https://github.com/user-attachments/assets/d6cbfc23-e141-465d-8166-c0526d2a3605" />
+
+Test Results:
+
+Unit Testing:
+<img width="659" alt="Screenshot 2025-06-07 at 7 11 05 PM" src="https://github.com/user-attachments/assets/f78f3ecb-2570-4a13-af30-1a8e7aa8aacb" />
+
+
+System Testing:
+<img width="659" alt="Screenshot 2025-06-07 at 7 11 35 PM" src="https://github.com/user-attachments/assets/4986cafe-05e7-4773-b7d1-5d2e05c70983" />
 
 
 
