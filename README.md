@@ -61,6 +61,8 @@ Below that we have four buttons, from left to right:
   ![image](https://github.com/user-attachments/assets/0eeb183b-9a3e-4ef9-b92b-b0ba00394292)
   Figure 4 Translation Page
 
+
+
  Saved Translation Text Page:
 Here you can read the translation you saved previously, saving a new translation will wipe the currently saved one.
 
@@ -92,11 +94,13 @@ Below is a table with the correct path for each task, these will be used in test
 
 
 Separate Functionality Testing:
+
 In this method we will try some functionalities that have multiple results based on some factors or have set results. This gives us a way to check if there are bugs of underlying problems that were not noticed during development. These serve as the unit tests.
 
 <img width="660" alt="Screenshot 2025-06-07 at 7 09 46 PM" src="https://github.com/user-attachments/assets/9477cd33-3083-4d91-9c5b-da3e7ee952af" />
 
 Full System Testing:
+
 System Testing tests the program fully and is required to be done manually with different routes or scenarios and checking if the results are expected or not. The table below provides some testing scenarios that are probable to happen to normal users and are expected to work flawlessly:
 
 <img width="659" alt="Screenshot 2025-06-07 at 7 10 17 PM" src="https://github.com/user-attachments/assets/d6cbfc23-e141-465d-8166-c0526d2a3605" />
@@ -104,10 +108,12 @@ System Testing tests the program fully and is required to be done manually with 
 Test Results:
 
 Unit Testing:
+
 <img width="659" alt="Screenshot 2025-06-07 at 7 11 05 PM" src="https://github.com/user-attachments/assets/f78f3ecb-2570-4a13-af30-1a8e7aa8aacb" />
 
 
 System Testing:
+
 <img width="659" alt="Screenshot 2025-06-07 at 7 11 35 PM" src="https://github.com/user-attachments/assets/4986cafe-05e7-4773-b7d1-5d2e05c70983" />
 
 
